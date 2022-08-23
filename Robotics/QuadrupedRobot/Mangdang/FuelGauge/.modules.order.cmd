@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/Robotics/QuadrupedRobot/Mangdang/FuelGauge/modules.order := {   echo /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/FuelGauge/max1720x_battery.ko; :; } | awk '!x[$$0]++' - > /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/FuelGauge/modules.order

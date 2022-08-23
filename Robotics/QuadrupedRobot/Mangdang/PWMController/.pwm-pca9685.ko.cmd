@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/Robotics/QuadrupedRobot/Mangdang/PWMController/pwm-pca9685.ko := ld -r -EL  -maarch64elf --build-id=sha1  -T scripts/module.lds -o /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/PWMController/pwm-pca9685.ko /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/PWMController/pwm-pca9685.o /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/PWMController/pwm-pca9685.mod.o;  true

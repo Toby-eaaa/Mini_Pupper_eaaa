@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/Robotics/QuadrupedRobot/Mangdang/EEPROM/at24.ko := ld -r -EL  -maarch64elf --build-id=sha1  -T scripts/module.lds -o /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/EEPROM/at24.ko /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/EEPROM/at24.o /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/EEPROM/at24.mod.o;  true

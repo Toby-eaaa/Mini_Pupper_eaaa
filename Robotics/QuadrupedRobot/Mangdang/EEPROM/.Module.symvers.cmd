@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/Robotics/QuadrupedRobot/Mangdang/EEPROM/Module.symvers := sed 's/\.ko$$/\.o/' /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/EEPROM/modules.order | scripts/mod/modpost -m -a  -o /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/EEPROM/Module.symvers -e -i Module.symvers   -T -

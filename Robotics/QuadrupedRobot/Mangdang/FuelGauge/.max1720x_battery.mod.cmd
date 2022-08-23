@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/Robotics/QuadrupedRobot/Mangdang/FuelGauge/max1720x_battery.mod := { echo  /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/FuelGauge/max1720x_battery.o;  echo; } > /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/FuelGauge/max1720x_battery.mod

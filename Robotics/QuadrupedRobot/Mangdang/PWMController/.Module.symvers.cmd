@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/Robotics/QuadrupedRobot/Mangdang/PWMController/Module.symvers := sed 's/\.ko$$/\.o/' /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/PWMController/modules.order | scripts/mod/modpost -m -a  -o /home/ubuntu/Robotics/QuadrupedRobot/Mangdang/PWMController/Module.symvers -e -i Module.symvers   -T -
