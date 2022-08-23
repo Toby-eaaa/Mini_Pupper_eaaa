@@ -4,6 +4,7 @@ from UDPComms import Publisher, Subscriber, timeout
 
 import time
 #HELLO GITWORLD!
+#Hello from seb
 ## Configurable ##
 MESSAGE_RATE = 20
 
