@@ -1,2 +1,3 @@
-# Mini_Pupper_eaaa
-Collection of guides and help for working with the Mini Pupper
+# Mini_Pupper_eaaa WIKI:
+https://github.com/Toby-eaaa/Mini_Pupper_eaaa/wiki
+
