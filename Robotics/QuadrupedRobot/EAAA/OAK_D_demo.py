@@ -33,10 +33,7 @@ class HostSync:
 MESSAGE_RATE = 20
 
 joystick_pub = Publisher(8830,65530)
-joystick_subcriber = Subscriber(8840, timeout=0.01)
-
-cycle_counter = 0
-
+joystick_subcriber = Subscriber(8840, timeout=0.02)
 
 msg = {
     "ly": 0,    #range from -1 to 1
@@ -55,6 +52,11 @@ msg = {
     "triangle": 0,  #0 or 1
     "message_rate": MESSAGE_RATE,
 }
+# Functiom to read from txt file. 
+# 0 = Deactivated
+# 1 = Activated
+# Run_robot_with_states will update the state in the txt file.
+
 
 def create_pipeline():
     print("Creating pipeline...")
@@ -120,13 +122,12 @@ def run(device, Sand_old):
     
     sync.add_msg("color", frame_q.get())
 
+    # Used to control time between readings from cam
     Sand_now = time.time()
-    if (Sand_now-Sand_old >= 0.1):
+    if (Sand_now-Sand_old >= 0.00):
         Sand_old = time.time()
 
         nn_in = tracklets_q.tryGet()
-
-        
 
         if nn_in is not None:
             seq = pass_q.get().getSequenceNum()
@@ -167,7 +168,9 @@ with dai.Device(create_pipeline()) as device:
         "x": 0,
         "y": 0
         }
+    
 
+    
     msg['L1'] = 1           #simulate L1 button press
     joystick_pub.send(msg) 
     time.sleep(0.1)
@@ -185,8 +188,8 @@ with dai.Device(create_pipeline()) as device:
         if coords_from_program is not None:
             x = coords_from_program["x"]
             y = coords_from_program["y"]
-            print("X: ", x)  # print coordinates
-            print("Y: ", y)
+            #print("X: ", x)  # print coordinates
+            #print("Y: ", y)
             msg['rx'] = convert(x)
             msg['ry'] = convert(y) * -1
             
